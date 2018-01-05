@@ -25,7 +25,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 
 
 #########################################################
-### your code goes here ###
+### Naive Bayes Classifier training and testing ###
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 
@@ -40,5 +40,5 @@ print("prediction time: %s", round(time()-t0, 3))
 
 acc = accuracy_score(labels_test, pred)
 
-print(acc)
+print(acc)  ###0.9732
 #########################################################
