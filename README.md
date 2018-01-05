@@ -7,4 +7,4 @@ Three classifier algorithms are used for predictions:
 2. Support Vector Machines (SVM) Classifier (0.991 accuracy)
 3. Decision Tree Classifier (0.979)
 
-SVM classifier performs best in classifying email author as Chris or Sara with an accuracy of 0.991 or 99.1%.
+SVM classifier performs best in predicting email author as Chris or Sara with an accuracy of 0.991 or 99.1%.
