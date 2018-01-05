@@ -1,8 +1,6 @@
 #!/usr/bin/python
 
 """
-    This is the code to accompany the Lesson 2 (SVM) mini-project.
-
     Use a SVM to identify emails from the Enron corpus by their authors:
     Sara has label 0
     Chris has label 1
@@ -23,7 +21,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 
 
 #########################################################
-### your code goes here ###
+### SVM training and testing ###
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 
@@ -39,17 +37,9 @@ t0 = time()
 pred = clf.predict(features_test)
 print("prediction time: ", round(time()-t0, 3))
 
-print(pred[10])
-print(pred[26])
-print(pred[50])
-cnt = 0
+acc = accuracy_score(labels_test,pred)  
 
-for i in pred:
-    if i == 1:
-        cnt+=1
-
-print(cnt)
-acc = accuracy_score(labels_test,pred)
+print(acc)   ###0.991
 
 print(acc)
 #########################################################
