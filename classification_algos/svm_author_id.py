@@ -24,6 +24,8 @@ features_train, features_test, labels_train, labels_test = preprocess()
 ### SVM training and testing ###
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 
 #features_train = features_train[:int(len(features_train)/100)]
 #labels_train = labels_train[:int(len(labels_train)/100)]
@@ -41,5 +43,10 @@ acc = accuracy_score(labels_test,pred)
 
 print(acc)   ###0.991
 
-print(acc)
+matrix = confusion_matrix(labels_test,pred)
+print(matrix)
+
+report = classification_report(labels_test,pred)
+print(report)
+
 #########################################################
