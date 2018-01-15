@@ -1,6 +1,6 @@
 # Email-author-classifier
 
-Given the content of an email predict whether the email's author is Chris(Label 0) or Sara(Label 1).
+Given the contents of an email predict whether the email's author is Chris(Label 0) or Sara(Label 1).
 
 Three classifier algorithms are used for predictions:
 1. Naive Bayes Classifier (0.9732 accuracy)
