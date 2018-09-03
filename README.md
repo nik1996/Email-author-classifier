@@ -1,8 +1,7 @@
 # Email-author-classifier
 
-Given the contents of an email predict whether the email's author is Chris(Label 0) or Sara(Label 1).
+Predicts the author of an email as Chris (label 0) or Sara (label 1) on the basis of contents of the email. The dataset is tested on different classification algorithms:
 
-Three classifier algorithms are used for predictions:
 1. Naive Bayes Classifier (0.9732 accuracy)
 2. Support Vector Machines (SVM) Classifier (0.991 accuracy)
 3. Decision Tree Classifier (0.979)
